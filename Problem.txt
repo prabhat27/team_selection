@@ -1,0 +1,146 @@
+Dream11 hosts various fantasy matches based on real life sport event. Every time when there is a cricket match between two teams, Dream11 faces challenge of creating teams of equal strength (which is just the summation of strength in individual player of each team).
+
+For Every cricket match played between 2 teams, there are total N players from both team. 
+
+Array a,b,c represents batsman,bowlers,wicket keepers  respectively among N players 
+
+Array S represents strength of each Player among N players
+
+Dream11's Objective is create TWO teams that are STRONGEST (having maximum total strength) with minimum difference in their Strength with following conditions:
+
+
+
+x - maximum no of batsman in any team.
+
+y - maximum no of bowlers in any team.
+
+z - maximum no of wicket keepers in any team.
+
+
+
+N - No of Players 
+
+m - No of batsman in N
+
+a - array representing batsman among N.
+
+o - No of Bowlers in N 
+
+b - array representing bowlers among N.
+
+p - No of wicket keepers 
+
+c - array representing wicket keepers among N.
+
+x,y,z
+
+k - no of Players each team must have .
+
+S- Strength of each players 
+
+
+Input Example 
+
+N- 10
+
+players Array PL- [1,2,3,4,5,6,7,8,9,10] -- players
+
+m- 3
+
+a- [1,2,3]   -- where 1,2,3 are batsman from players Array
+
+o- 3
+
+b- [4,5,6]  -- where 4,5,6 are bowlers from players Array
+
+p- 4
+
+c- [7,8,9,10]     -- where 7,8,9,10 are wicket keepers from players Array
+
+x- 1
+
+y- 1
+
+z-1
+
+k- 3
+
+
+
+S- [1,1,3,1,1,3,2,2,3,4]     -- Strength of each players 
+
+
+
+Strength of Batsman from Array a can be Given by S[a[i]]
+
+Strength of Bowlers from Array b can be Given by S[b[i]]
+
+Strength of Wicket Keepers from Array c can be Given by S[c[i]]
+
+Strength of Each Players can be Given by S[PL[i]]
+
+
+Output: 
+
+T1,T2,S1,S2,D
+
+T1 - array of players in team1 
+
+T2 - array of players in team2 
+
+S1 - total strength of team1
+
+S2 - total strength of team2
+
+D = |S1-S2| Where D should be minimum
+
+
+
+
+
+
+
+Two possible Team Compositions
+
+
+
+Case 1
+
+
+
+T1  -  [ 1, 3, 3 ]  — Total Strength  S1 = 7  
+
+T2 -  [ 3, 1, 4 ]  — Total Strength   S2 = 8 
+
+
+
+Diff  D = | 7 - 8 | = 1 
+
+
+
+
+
+Case 2
+
+
+
+T1 - [1, 3, 3 ] — Total Strength  S1= 7 
+
+T2 - [1, 1, 4 ] —  Total Strength S2 =6 
+
+
+
+Diff   D= | 7 - 6 | =1
+
+
+
+
+
+
+
+Output - 
+
+
+
+Team Composition presented in Case 1 -Should be answer ,As even if the difference between total strength of both team composition is same .The Total Strength of individual team in case 1 is higher than case 2.
+
